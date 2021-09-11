@@ -55,11 +55,7 @@ export default function App() {
       <DefaultButton
         type1="check-button"
         action=
-          {() => {
-            const results = giveResultArray(text1Input, text2Input)
-            setResultArray(results)
-          }
-          }
+          {() => setResultArray(giveResultArray(text1Input, text2Input))}
         text="Check Diffs"
       />
       <h1>{checkDiff()}</h1>
