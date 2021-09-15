@@ -9,30 +9,41 @@
   width:100%;
   height:100%;
   padding: 10px;
+  overflow: auto;
+  margin-right: 10px;
 }
 
 .text-holders {
   display:grid;
-  grid-template-columns: 45% 5% 45%;
+  grid-template-columns: 47% 6% 47%;
+  width: 100%;
 }
 
 .input-box {
   width: 100%;
-  height: 8vh;
+  height: 95%;
   white-space: nowrap;
-  overflow:scroll;
+  overflow:auto;
   font-size:14px;
+}
+.input-box-div {
+  width: 100%;
+  height: 95%;
+  white-space: nowrap;
+  font-size:14px;
+  text-align:left;
+  border: 0px black solid;
+  overflow: auto;
 }
 
 .result {
-  margin-top: 2px;
   height: 80vh;
   padding-left: 3px;
   padding-right: 3px;
 }
 
 .desc-text {
-  width: 90%;
+  width: 100%;
   margin:5px;
 }
 
@@ -43,19 +54,44 @@
 .line{
   margin:0px;
   padding:0;
-  text-align: center;
+  text-align: left;
   border: 1px black solid;
   line-height: 14px;
+  min-height: 16px;
+  min-width:100%;
   font-family: monospace;
   font-size: 14px;
+  height:fit-content;
+  width:fit-content;
+}
+
+.result-line{
+  margin:0px;
+  padding:0;
+  text-align: center;
+  line-height:auto;
+  min-height: 16px;
+  font-family: monospace;
+  font-size: 10px;
+  color: rgba(128, 128, 128, 0.699);
 }
 
 .line-true {
-  background-color: green;
+  background-color: rgba(0, 223, 0, 0.4);
   color: white;
+  line-height: 14px;
 }
 
 .line-false {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.4);
   color: white;
+  line-height: 14px;
+
+}
+
+.check-button {
+  margin: 20px;
+  padding: 5px;
+  border: 3px black solid;
+  border-radius: 3px;
 }

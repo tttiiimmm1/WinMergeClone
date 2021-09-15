@@ -1,17 +1,18 @@
 
 
 export default function giveResultArray(text1Input, text2Input) {
-  const text1Array = text1Input.split("\n");
-  const text2Array = text2Input.split("\n");
+  const text1Split = text1Input.split("\n");
+  const text2Split = text2Input.split("\n");
   let resultArray = [];
 
-  for (var i = 0; (text1Array.length >= text2Array.length ? (i < text1Array.length) : (i < text2Array.length) ); i++ ) {
-    console.log(text1Array[i], text2Array[i]);
-    if (text1Array[i] && text2Array[i] && text1Array[i].trim() === text2Array[i].trim()) {
-      resultArray.push("T");
+  for (var i = 0; (text1Split.length >= text2Split.length ? (i < text1Split.length) : (i < text2Split.length) ); i++ ) {
+    console.log(text1Split[i], text2Split[i]);
+    if (text1Split[i] && text2Split[i] && text1Split[i].trim() === text2Split[i].trim()) {
+      resultArray.push(i);
     } else {
-      resultArray.push("F");
+      resultArray.push(i);
     }
   };
   return resultArray;
 }
+
