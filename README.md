@@ -1,5 +1,5 @@
 ## Test Text 1
-Two roads diverged in a yellow wood,
+ - Two roads diverged in a yellow wood,
 And sorry I could not travel both
 And be one traveler, long I stood
 And looked down one as far as I could
@@ -25,7 +25,8 @@ And that has made all the difference.
 
 ## Test Text 2
  - replaced all 'y' with 'm'
-Two roads diverged in a mellow wood,
+
+ - Two roads diverged in a mellow wood,
 And sorrm I could not travel both
 And be one traveler, long I stood
 And looked down one as far as I could
